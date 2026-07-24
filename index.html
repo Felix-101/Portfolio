@@ -6,7 +6,7 @@
 <title>Tolulope Kupoluyi, Flutter Engineer</title>
 <meta name="description" content="Flutter engineer in Lagos, Nigeria. I build mobile apps and ship them to Google Play and the App Store." />
 <meta property="og:title" content="Tolulope Kupoluyi, Flutter Engineer" />
-<meta property="og:description" content="Selected mobile work: YAMI, Run Me, Gate Africa, InnovaTrack, Trade Aviator and more." />
+<meta property="og:description" content="Selected mobile work: Multitexter, YAMI, Gate Africa, Trade Aviator and more." />
 <meta property="og:type" content="website" />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23C6F24E'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='28' font-weight='700' text-anchor='middle' fill='%230B0C10'%3Etk%3C/text%3E%3C/svg%3E" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -428,7 +428,8 @@
     color: var(--accent);
   }
   .work-body h3 { font-size: 1.35rem; margin-top: 8px; }
-  .work-body p { color: var(--muted); font-size: 0.95rem; margin-top: 10px; flex-grow: 1; }
+  .work-body p { color: var(--muted); font-size: 0.95rem; margin-top: 10px; }
+  .work-body p:last-of-type { flex-grow: 1; }
 
   .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
   .tags span {
@@ -700,7 +701,7 @@
         <a href="#skills">Skills</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
-        <a class="btn btn-accent btn-sm" href="https://docs.google.com/document/d/1epZaWHIT5nU7b_9zi0_8x_1RW1FB0t3JloQ3SPH1oRQ/edit?usp=sharing" target="_blank" rel="noopener">Resume</a>
+        <a class="btn btn-accent btn-sm" href="https://docs.google.com/document/d/1V-mv0c8Sx0z7eb3psB_GbLG30gGNCJzITsPkJbb5S6s/edit?usp=sharing" target="_blank" rel="noopener">Resume</a>
       </nav>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
         <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
@@ -712,7 +713,7 @@
       <a href="#skills">Skills</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
-      <a href="https://docs.google.com/document/d/1epZaWHIT5nU7b_9zi0_8x_1RW1FB0t3JloQ3SPH1oRQ/edit?usp=sharing" target="_blank" rel="noopener">Resume ↗</a>
+      <a href="https://docs.google.com/document/d/1V-mv0c8Sx0z7eb3psB_GbLG30gGNCJzITsPkJbb5S6s/edit?usp=sharing" target="_blank" rel="noopener">Resume ↗</a>
     </nav>
   </div>
 </header>
@@ -766,10 +767,10 @@
   <!-- Marquee -->
   <div class="marquee" aria-hidden="true">
     <ul class="marquee-track">
-      <li>Flutter</li><li>Dart</li><li>Riverpod</li><li>BLoC</li><li>Firebase</li><li>Supabase</li><li>Node.js</li><li>REST APIs</li><li>App Store Connect</li><li>TestFlight</li><li>Git</li><li>MongoDB</li><li>MySQL</li>
+      <li>Flutter</li><li>Dart</li><li>Riverpod</li><li>BLoC</li><li>Firebase</li><li>Supabase</li><li>SQLite</li><li>Node.js</li><li>REST APIs</li><li>App Store Connect</li><li>Play Console</li><li>TestFlight</li><li>Git</li>
     </ul>
     <ul class="marquee-track">
-      <li>Flutter</li><li>Dart</li><li>Riverpod</li><li>BLoC</li><li>Firebase</li><li>Supabase</li><li>Node.js</li><li>REST APIs</li><li>App Store Connect</li><li>TestFlight</li><li>Git</li><li>MongoDB</li><li>MySQL</li>
+      <li>Flutter</li><li>Dart</li><li>Riverpod</li><li>BLoC</li><li>Firebase</li><li>Supabase</li><li>SQLite</li><li>Node.js</li><li>REST APIs</li><li>App Store Connect</li><li>Play Console</li><li>TestFlight</li><li>Git</li>
     </ul>
   </div>
 
@@ -808,28 +809,37 @@
           </div>
         </article>
 
-        <!-- MultiTexter -->
+        <!-- Multitexter -->
         <article class="work-card reveal">
           <div class="work-media fit-shot">
-            <span class="status status-building">Launching soon</span>
+            <span class="status status-building">Internal testing</span>
             <div class="phone">
-              <img src="images/multitexter.png" alt="MultiTexter navigation drawer listing drafts, scheduled messages, delivery reports and contact lists" loading="lazy"
+              <img src="images/multitexter.png" alt="Multitexter navigation drawer listing drafts, scheduled messages, delivery reports and contact lists" loading="lazy"
                    onerror="this.replaceWith(Object.assign(document.createElement('div'), { className: 'shot-pending', textContent: 'MT' }))" />
             </div>
           </div>
           <div class="work-body">
-            <span class="work-role">Mobile Engineer</span>
-            <h3>MultiTexter</h3>
+            <span class="work-role">Mobile Engineer · Release Engineering</span>
+            <h3>Multitexter</h3>
             <p>
               A bulk SMS app for businesses sending to thousands of numbers at once.
-              Compose with a live character and segment counter, pull recipients from
-              saved contact lists, schedule for later, and route around DND on MTN when a
-              message has to arrive. Units, drafts, delivery reports and top ups all live
-              in the app.
+              Compose with a live character counter, pull recipients from saved contact
+              lists, schedule for later, and route around DND on MTN when a message has to
+              arrive. Units, drafts, delivery reports and top ups all live in the app.
+            </p>
+            <p>
+              I also own its release engineering on both platforms. I set up the Android
+              signing pipeline with an RSA release keystore, moved the project onto signed
+              AAB builds with the keys kept out of version control, cut the APK size down,
+              and pushed the first internal testing release through Play Console.
             </p>
             <div class="tags">
-              <span>Flutter</span><span>Scheduling</span><span>Delivery Reports</span>
+              <span>Flutter</span><span>Release engineering</span><span>Play Console</span>
             </div>
+            <a class="work-link" href="https://www.multitexter.com/" target="_blank" rel="noopener">
+              Visit project
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M9 7h8v8"/></svg>
+            </a>
           </div>
         </article>
 
@@ -994,13 +1004,14 @@
 
       <div class="timeline">
         <div class="timeline-item reveal">
-          <span class="timeline-date">Now</span>
+          <span class="timeline-date">2026 to now</span>
           <h3>Mobile Engineer</h3>
-          <div class="timeline-org">YAMI · MultiTexter</div>
+          <div class="timeline-org">Multitexter · YAMI</div>
           <p>
-            Building two Flutter products: YAMI, a peer-to-peer lending app, and
-            MultiTexter, a bulk SMS platform for businesses. Both are pre-launch, so most
-            of the work is flows, state and the parts users never see.
+            Building Multitexter, a bulk SMS app for Android and iOS, and owning its
+            release engineering: an RSA release keystore, signed AAB builds with the keys
+            kept out of version control, a smaller APK, and the first internal testing
+            rollout on Play Console. Alongside it, YAMI, a peer-to-peer lending app.
           </p>
         </div>
         <div class="timeline-item reveal">
@@ -1035,12 +1046,12 @@
         <div class="timeline-item reveal">
           <span class="timeline-date">May 2024 to Jan 2026</span>
           <h3>Mobile Engineer, NYSC Intern</h3>
-          <div class="timeline-org">Cardify Africa &amp; Gate Africa</div>
+          <div class="timeline-org">Savertech Limited · Load.ng, Gate Africa &amp; Cardify Africa</div>
           <p>
-            Embedded with the lead developer team on two live fintech products, including
-            Cardify Africa, which serves over 100,000 verified users across both stores.
-            Resolved cross-platform UI inconsistencies and worked with senior engineers on
-            code review and release cycles.
+            Worked with the lead developer team on Savertech's live Android and iOS apps,
+            including Cardify Africa, which serves over 100,000 verified users. Fixed
+            cross-platform UI inconsistencies to bring the apps back to visual parity, and
+            joined code reviews and release cycles with senior engineers.
           </p>
         </div>
       </div>
@@ -1080,7 +1091,7 @@
             <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.66 3.58 3 8 3s8-1.34 8-3V5"/><path d="M4 12c0 1.66 3.58 3 8 3s8-1.34 8-3"/></svg>
             Databases
           </h3>
-          <div class="tags"><span>Firebase</span><span>Supabase</span><span>MongoDB</span><span>MySQL</span></div>
+          <div class="tags"><span>Firebase</span><span>SQLite</span><span>Supabase</span></div>
         </div>
         <div class="skill-card reveal">
           <h3>
@@ -1110,9 +1121,10 @@
           <p class="reveal">
             I write Flutter, and most of what I've built is money moving between people:
             wallets, lending flows, bill payments, bulk messaging. Two of the apps I've
-            worked on are live on Google Play. I also own the release side myself, from
-            certificates and provisioning through TestFlight to the review queue, which is
-            unglamorous but is the difference between a repo and a product.
+            worked on are live on Google Play. I also own the release side on both
+            platforms, from keystores and signed AAB builds on Android to certificates,
+            provisioning and TestFlight on iOS. It's unglamorous work, but it's the
+            difference between a repo and a product.
           </p>
           <p class="reveal">
             I've run a project from the other chair too, as <strong>project manager</strong>
