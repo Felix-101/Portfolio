@@ -1,1 +1,5 @@
 .DS_Store
+
+# Raw screenshot with a real phone number in the recipients field.
+# The published version is images/multitexter.png, which has dummy numbers.
+images/send_sms.png
