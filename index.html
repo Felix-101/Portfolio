@@ -363,6 +363,12 @@
   .work-card:hover .work-media .phone { transform: translateY(-10px); }
   .work-media .phone.crop-top img { object-position: center bottom; }
 
+  /* Fits a whole screen in frame instead of cropping to fill it */
+  .work-media.fit-shot { align-items: center; padding-top: 0; }
+  .work-media.fit-shot .phone { width: 136px; border-width: 4px; border-radius: 24px; }
+  .work-media.fit-shot .phone::after { width: 40px; height: 9px; top: 6px; }
+  .work-media.fit-shot .phone img { object-fit: contain; }
+
   .work-cover {
     position: relative;
     height: 300px;
@@ -804,10 +810,10 @@
 
         <!-- MultiTexter -->
         <article class="work-card reveal">
-          <div class="work-media">
+          <div class="work-media fit-shot">
             <span class="status status-building">Launching soon</span>
             <div class="phone">
-              <img src="images/multitexter.png" alt="MultiTexter dashboard showing unit balance and quick actions" loading="lazy"
+              <img src="images/multitexter.png" alt="MultiTexter navigation drawer listing drafts, scheduled messages, delivery reports and contact lists" loading="lazy"
                    onerror="this.replaceWith(Object.assign(document.createElement('div'), { className: 'shot-pending', textContent: 'MT' }))" />
             </div>
           </div>
